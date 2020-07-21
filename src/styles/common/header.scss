@@ -1,10 +1,64 @@
 @import "../mixins/media";
-
+/* @font-face {
+    font-family: 'RFDewi';
+    src: local('RF Dewi Regular'), local('RF-Dewi-Regular'),
+        url('../../fonts/RFDewi-Regular/RFDewi-Regular.woff2') format('woff2'),
+        url('../../fonts/RFDewi-Regular/RFDewi-Regular.woff') format('woff'),
+        url('../../fonts/RFDewi-Regular/RFDewi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  } */
 header {
-    width: 220px;
-    background-color: red;
+    // display: flex;
+    //width: 1440px;
+    /* background-color: red; */
 
-    @include media-tablet {
-        width: 500px;
-    }
+    // @include media-tablet {
+    //     width: 500px;
+    // }
+    padding: 0 64px 0 64px;
+}
+.menu{
+    width: 100%;
+}
+.nav{
+    padding-top: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.nav-item{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-link{
+    padding-right: 25px;
+    font-family: "RFDewi", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.patreon{
+    display: flex;
+    align-items: center;
+    
+}
+.patreon-logo{
+
+}
+.patreon span{
+    font-family: RFDewi;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-left: 13px;
+    color: #000000;
+    vertical-align:center;
+
 }
