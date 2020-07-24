@@ -4,6 +4,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 1060px;
+    width: 1309px;
 }
 .main-news-block{
     
@@ -13,38 +14,55 @@
     width: 654px;
     height: 640px;
     background: #273238;
-
-/* Grey-800 */
     border: 1px solid #696969;
 }
 .news-block{
     width: 654px;
     height: 320px;
     border: 1px solid #B1B3B6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .main-news-block__header{
     padding-left: 27px;
     padding-right: 30px;
-    margin-top: 16px;
-    margin-bottom: 0px;
+    padding-top: 16px;
+    margin: 0px;
     font-family: "RFDewi";
     font-size: 32px;
-
     color: #FFFFFF;
 }
 .main-news-block__subheader{
+    padding-top: 8px;
     margin: 0;
     padding-left: 27px;
     padding-right: 120px;
-    /* 16-reg */
-font-family: "RFDewi";
-font-size: 16px;
+    font-family: "RFDewi";
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.main-news-block_bottom{
+    margin-top: auto;
+    padding-bottom: 35px;
+}
+.main-news-block__date{
+    padding-left: 27px;
+    font-family: "RFDewi";
+    font-size: 16px;
+    line-height: 130%;
+    color: #696969;
+}
+.main-news-block__author{
 
-/* or 21px */
-
-color: #FFFFFF;
-
-
+    font-family: "RFDewi";
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 3px;
+    padding-left: 27px;
+    margin: 0;
 }
 .main-news-block__img{
     margin: 0 28px;
@@ -56,10 +74,42 @@ color: #FFFFFF;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
-    line-height: 113%;
+    color: #333333;
+}
+.news-block__bottom{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+}
+.news-block__bottom_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.news-block__date{
+font-family: "RFDewi";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 130%;
+color: #828282;
 
-/* or 36px */
+}
+.news-block__author{
+    padding-top: 3px;
+    font-family: "RFDewi";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+    
+    /* Gray 1 */
+    color: #333333;
 
-/* Gray 1 */
-color: #333333;
 }
